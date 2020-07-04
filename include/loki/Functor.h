@@ -1241,7 +1241,7 @@ namespace Loki
 
         // Member functions
 
-        Functor() : spImpl_(0)
+        Functor() : spImpl_(nullptr)
         {}
         
         Functor(const Functor& rhs) : spImpl_(Impl::Clone(rhs.spImpl_.get()))

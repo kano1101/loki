@@ -344,7 +344,7 @@ struct DefaultCatchAll
 ////////////////////////////////////////////////////////////////////////////////
 
 #define LOKI_DEFINE_CYCLIC_VISITABLE(SomeVisitor) \
-    virtual SomeVisitor::ReturnType Accept(SomeVisitor& guest) \
+    virtual SomeVisitor::ReturnType Accept(SomeVisitor& guest) override \
     { return guest.GenericVisit(*this); }
 
 } // namespace Loki
